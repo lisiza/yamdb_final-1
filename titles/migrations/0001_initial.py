@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(
                     auto_created=True,
                     primary_key=True,
-                    serialize=False, 
+                    serialize=False,
                     verbose_name='ID'
                 )),
                 ('name', models.CharField(
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(
                     auto_created=True,
-                    primary_key=True, 
+                    primary_key=True,
                     serialize=False, verbose_name='ID'
                 )),
                 ('name', models.CharField(
@@ -47,9 +47,9 @@ class Migration(migrations.Migration):
             name='Title',
             fields=[
                 ('id', models.AutoField(
-                    auto_created=True, 
+                    auto_created=True,
                     primary_key=True,
-                    serialize=False, 
+                    serialize=False,
                     verbose_name='ID')),
                 ('name', models.CharField(
                     max_length=50,
@@ -57,29 +57,29 @@ class Migration(migrations.Migration):
                 )),
                 ('year', models.IntegerField(
                     blank=True,
-                    null=True, 
+                    null=True,
                     verbose_name='Дата'
                 )),
                 ('description', models.CharField(
                     blank=True,
-                    max_length=100, 
-                    null=True, 
+                    max_length=100,
+                    null=True,
                     verbose_name='Описание'
                 )),
                 ('rating', models.IntegerField(
-                    blank=True, 
+                    blank=True,
                     default=None,
-                    null=True, 
+                    null=True,
                     verbose_name='Рейтинг'
                 )),
                 ('category', models.ForeignKey(
-                    blank=True, 
+                    blank=True,
                     null=True,
                     on_delete=django.db.models.deletion.SET_NULL,
                     related_name='title', to='titles.Category')),
                 ('genre', models.ManyToManyField(
                     blank=True,
-                    related_name='title', 
+                    related_name='title',
                     to='titles.Genre')),
             ],
         ),
