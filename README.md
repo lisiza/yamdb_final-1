@@ -1,4 +1,4 @@
 # yamdb_final
 yamdb_final
 ![example workflow name](https://github.com/zYoma/yamdb_final/workflows/app%20workflow/badge.svg)
-![example workflow file path](https://github.com/zYoma/yamdb_final/workflows/.github/workflows/yamdb.yml/badge.svg)
+
